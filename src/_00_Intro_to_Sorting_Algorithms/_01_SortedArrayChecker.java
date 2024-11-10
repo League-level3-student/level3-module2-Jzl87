@@ -10,13 +10,13 @@ public class _01_SortedArrayChecker {
 	 */
 	public static boolean intArraySorted(int[] arr) {
 		boolean result = true;
-		for (int num = 0; num < arr.length; num++) {
-			for (int check = num + 1; check < arr.length; check++) {
-				if (arr[num] >= arr[check]) {
+		for (int num = 1; num < arr.length; num++) {
+		
+				if (arr[num-1] > arr[num]) {
 					result = false;
 				}
 			}
-		}
+		
 		return result;
 	}
 
@@ -28,13 +28,12 @@ public class _01_SortedArrayChecker {
 	 */
 	public static boolean doubleArraySorted(double [] arr) {
 		boolean result = true;
-		for (int num = 0; num < arr.length; num++) {
-			for (int check = num + 1; check < arr.length; check++) {
-				if (arr[num] >= arr[check]) {
+		for (int num = 1; num < arr.length; num++) {
+				if (arr[num-1] > arr[num]) {
 					result = false;
 				}
 			}
-		}
+		
 		return result;
 	}
 
@@ -69,13 +68,12 @@ public class _01_SortedArrayChecker {
 	public static boolean stringArraySorted (String [] arr) {
 		boolean result = true;
 
-		for (int num = 0; num < arr.length; num++) {
-			for (int check = num + 1; check < arr.length; check++) {
-				if (arr[num].compareTo(arr[check]) <= 0) {
+			for (int check = 1; check < arr.length; check++) {
+				if (arr[check-1].compareTo(arr[check]) >= 0) {
 					result = false;
 				}
 			}
-		}
+		
 		return result;
 	}
 

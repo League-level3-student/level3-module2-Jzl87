@@ -49,8 +49,9 @@ public class QuickSorter extends Sorter {
     
                 i++;
                 j--;
+                display.updateDisplay();
             }
-            display.updateDisplay();
+           
         }
         
         // 8. if low is less than j, call the quickSort method using

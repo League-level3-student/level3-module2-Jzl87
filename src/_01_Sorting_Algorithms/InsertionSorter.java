@@ -31,9 +31,10 @@ public class InsertionSorter extends Sorter {
                     array[j] = array[j - 1];
                     array[j - 1] = temp;
                 }
+                display.updateDisplay();
             }
             
-            display.updateDisplay();
+          
         }
     }
 }
