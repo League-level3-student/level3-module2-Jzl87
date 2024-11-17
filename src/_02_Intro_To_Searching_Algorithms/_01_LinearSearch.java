@@ -11,7 +11,13 @@ public class _01_LinearSearch {
         //    in the array. Return the location in the array
         //    where the value was found.
         //    If the value is not found in the array, return -1.
-
-        return 0;
+    	int result = -1;
+    	for (int x = 0; x < words.length; x++) {
+    		if (words[x].equals(value)) {
+    			result = x;
+    		}
+    	}
+    
+        return result;
     }
 }
