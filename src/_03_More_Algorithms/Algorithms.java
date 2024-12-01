@@ -113,18 +113,20 @@ public class Algorithms {
 	}
 
 	public static List<String> sortWords(List<String> sequence) {
-		for (int i = 1; i < sequence.size(); i++) {
-
-			for (int j = i; j > 0; j--) {
+		boolean sorted = false;
+		while (!sorted) {
+			sorted = true;
+			for (int j = 1; j < sequence.size(); j++) {
 
 				if (sequence.get(j).compareTo(sequence.get(j - 1)) < 0) {
+					
+					sorted = false;
 					String temp = sequence.get(j);
 					sequence.set(j, sequence.get(j - 1));
 					sequence.set(j - 1, temp);
 				}
 
 			}
-//FIX NESTED LOOPS :)
 		}
 
 		return sequence;

@@ -97,7 +97,7 @@ public class _01_SearchingAndSortingAlgorithmsTest {
                 .asList(new String[] { "aby", "dap", "alt", "alb", "ama", "ard", "ana", "ala", "awn", "dah", "bar",
                         "bee", "bel", "bot", "bis", "cep", "alk", "cog", "col", "cwm", "dag", "ait", "dal", "daw" });
         assertEquals("aby", Algorithms.sortWords(words).get(0));
-        assertEquals("bar", Algorithms.sortWords(words).get(6));
+        assertEquals("bar", Algorithms.sortWords(words).get(10));
         assertEquals("daw", Algorithms.sortWords(words).get(words.size() - 1));
     }
 }
